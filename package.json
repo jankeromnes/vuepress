@@ -8,7 +8,8 @@
   "description": "Minimalistic doc generator with Vue component based layout system",
   "scripts": {
     "precommit": "lint-staged",
-    "bootstrap": "yarn && lerna bootstrap && yarn tsc",
+    "bootstrap": "yarn && yarn lerna:bootstrap && yarn tsc",
+    "lerna:bootstrap": "lerna bootstrap",
     "clean": "lerna clean && rm -rf node_modules",
     "boot": "node scripts/bootstrap.js",
     "remote-version": "node scripts/remote-version.js",
